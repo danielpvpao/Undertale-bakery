@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    width: 100vw;
+    margin-top: 0;
+    justify-content: space-between;
+    background-color: black;
+}
+.SansGif{
+    height:12vh;
+    width: 6vw;
+}
+.nav-header{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    color:  #45a6ef;
+}
+.nav-header > p {
+    margin:0 40px;
+}
+.produ{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40vh;
+}
