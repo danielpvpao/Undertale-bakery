@@ -58,7 +58,7 @@ function List() {
             <p>Quem somos</p>
             <p>Produtos</p>
         </nav>
-    </div>
+    </div>    
     <div className="produ">
     {products.map((product) => <Card
                 key={product.id}
@@ -70,6 +70,17 @@ function List() {
                 miniature={product.miniature} />
             )}
     </div>    
+    <div className="Produ2">
+    {products.map((product) => <Card
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                desc={product.desc}
+                price={product.price}
+                image={product.image}
+                miniature={product.miniature} />
+            )}
+    </div>
         </> );
 }
 

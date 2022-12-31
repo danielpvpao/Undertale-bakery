@@ -1,6 +1,8 @@
+
 .desc {
     color: red;
     font-size: 10px;
+    cursor: default;
 }
 .card{
     display: flex;
@@ -15,10 +17,12 @@
 .price{
     font-family: "Silkscreen", cursive;
     color: red;
+    cursor: default;
 }
 .name{
     font-size:120%;
     padding-top: 10%;
+    cursor: default;
 }
 .image{
     width: 100%;
@@ -29,6 +33,15 @@
     width: 50%;
     background-color: bisque;
     border: 0;
+    margin-left: 25%;
+}
+button:hover {
+    background-color: #333333;
+    border: 2px solid #000;
+    color: white;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.05s;
+    cursor: pointer;
 }
 .miniature{
     max-height: 10%;
@@ -36,4 +49,7 @@
     margin-inline-start: 79%;
     border-radius: 5px;
     z-index: -1;
+}
+a{
+    width: 100%;
 }
