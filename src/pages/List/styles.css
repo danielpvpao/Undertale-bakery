@@ -37,3 +37,19 @@
     height: 40vh;
     margin-top: 10%;
 }
+.footer{
+    background-image: url(https://media.tenor.com/ySfR9-x0-d8AAAAM/undertale-pixel-art.gif);
+    background-size: 100%; 
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    align-items: flex-end;
+    height: 6vh;
+    display: flex;
+    position: fixed;
+}
+.All-rights{
+    margin-inline: auto;
+    color: white;
+}

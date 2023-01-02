@@ -81,7 +81,9 @@ function List() {
                 miniature={product.miniature} />
             )}
     </div>
+    <div className="footer">
+        <p className='All-rights'>©All rights reserverd to UndertaleBakkery</p>
+    </div>  
         </> );
-}
-
+}  
 export default List;
