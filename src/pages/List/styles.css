@@ -36,6 +36,8 @@
     justify-content: space-around;
     height: 40vh;
     margin-top: 10%;
+    padding-bottom: 20%;
+    padding-top:5% ;
 }
 .footer{
     background-image: url(https://media.tenor.com/ySfR9-x0-d8AAAAM/undertale-pixel-art.gif);
@@ -52,4 +54,6 @@
 .All-rights{
     margin-inline: auto;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
 }
