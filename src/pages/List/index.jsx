@@ -1,46 +1,15 @@
 import Card from '../../components/Card'
 import './styles.css'
-
+import api from '../../services/api'
 
 import { useEffect,useState } from 'react';
-const oldproducts = [
-    {
-        id: 1,
-        desc:'Pãozinho Francês, te enche de determinação ',
-        price: '+5 HP',
-        image: 'http://paoquentinhosaindo.com.br/portal2/wp-content/uploads/2021/07/pao2.png',
-    },
-    {
-        id: 2,
-        name: 'pão sírio',
-        desc:'Um sanduíche de pão sírio',
-        price: '+4 HP',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfujzmHPWGOdTOuh1y0vuDDZCGTK_9gIg-Q&usqp=CAU',
-    },
-    {
-        id: 3,
-        name: 'bolo',
-        desc:'Bolo feito de bolo',
-        price: '+2 HP',
-        image: 'http://paoquentinhosaindo.com.br/portal2/wp-content/uploads/2021/07/pao2.png',
-    },
-    {
-        id: 4,
-        name: 'pão doce',
-        desc:'Pão doce, é apenas um pão doce',
-        price: '+1 HP',
-        image: 'http://paoquentinhosaindo.com.br/portal2/wp-content/uploads/2021/07/pao2.png',
-    }
-];
 
 function List() {
     const [products,setProducts] = useState([])
 
     const getProducts = async () => {
-        await fetch('https://undertale-bakery.vercel.app/products')
-        .then((res) => res.json())
-        .then((res) => setProducts(res))
-
+    const res = await api.get('/products')
+    setProducts(res.data)
     }
     
     useEffect(() => {
